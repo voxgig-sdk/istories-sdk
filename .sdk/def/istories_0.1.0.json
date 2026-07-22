@@ -1,0 +1,95 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Istories API",
+    "description": "The Istories API provides access to documentary films and reports from Russia and beyond, focusing on investigations of military crimes and corruption. It allows users to retrieve news articles and related content without censorship or restrictions on sensitive topics.",
+    "version": "1.0.0",
+    "contact": {
+      "url": "https://github.com/l0v3m0n3y/istories"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://istories.media",
+      "description": "Production server"
+    }
+  ],
+  "paths": {
+    "/page-data/news/page-data.json": {
+      "get": {
+        "summary": "Get news",
+        "description": "Retrieves a list of news articles including documentary films and investigative reports about military crimes and corruption from Russia and beyond.",
+        "operationId": "getNews",
+        "tags": [
+          "News"
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful response containing news data",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "result": {
+                      "type": "object",
+                      "properties": {
+                        "data": {
+                          "type": "object",
+                          "description": "Contains the news data and page information"
+                        },
+                        "pageContext": {
+                          "type": "object",
+                          "description": "Page context information"
+                        }
+                      }
+                    },
+                    "componentChunkName": {
+                      "type": "string",
+                      "description": "Component chunk identifier"
+                    },
+                    "path": {
+                      "type": "string",
+                      "description": "Page path"
+                    },
+                    "staticQueryHashes": {
+                      "type": "array",
+                      "items": {
+                        "type": "string"
+                      },
+                      "description": "Static query hashes"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad request"
+          },
+          "500": {
+            "description": "Internal server error"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "NewsData": {
+        "type": "object",
+        "description": "News data structure containing articles and reports"
+      }
+    }
+  },
+  "tags": [
+    {
+      "name": "News",
+      "description": "Operations related to retrieving news articles and investigative reports"
+    }
+  ],
+  "externalDocs": {
+    "description": "API Documentation",
+    "url": "https://github.com/l0v3m0n3y/istories"
+  }
+}

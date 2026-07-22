@@ -1,0 +1,34 @@
+{
+  "existing": {
+    "new": {
+      "NEW00": {
+        "component_chunk_name": "s28",
+        "path": "s29",
+        "result": {},
+        "static_query_hash": []
+      },
+      "NEW01": {
+        "component_chunk_name": "s50",
+        "path": "s51",
+        "result": {},
+        "static_query_hash": []
+      },
+      "NEW02": {
+        "component_chunk_name": "s78",
+        "path": "s79",
+        "result": {},
+        "static_query_hash": []
+      }
+    }
+  },
+  "new": {
+    "new": {
+      "new_ref01": {
+        "component_chunk_name": "sa0",
+        "path": "sa1",
+        "result": {},
+        "static_query_hash": []
+      }
+    }
+  }
+}

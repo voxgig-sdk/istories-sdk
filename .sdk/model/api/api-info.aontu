@@ -1,0 +1,25 @@
+# API Information
+
+
+main: {
+  kit: {
+    info: {
+      auth: false
+      contact: {
+        url: "https://github.com/l0v3m0n3y/istories"
+      }
+      description: "The Istories API provides access to documentary films and reports from Russia and beyond, focusing on investigations of military crimes and corruption. It allows users to retrieve news articles and related content without censorship or restrictions on sensitive topics."
+      servers: [
+        {
+          description: "Production server"
+          url: "https://istories.media"
+        }
+      ]
+      summary: "The Istories API provides access to documentary films and reports from Russia and beyond, focusing on investigations of military crimes and corruption."
+      title: "Istories API"
+      version: "1.0.0"
+      website: "https://github.com/l0v3m0n3y/istories"
+    }
+  }
+}
+

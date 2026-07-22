@@ -1,0 +1,15 @@
+# Guide
+
+guide: {
+  metrics: count: entity: 1
+  metrics: count: path: 1
+  metrics: count: method: 1
+
+  entity: new: {
+    path: "/page-data/news/page-data.json": {
+      action: "page_data": {}
+      op: list: method: *GET
+    }
+  }
+
+}

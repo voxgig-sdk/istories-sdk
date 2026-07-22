@@ -1,0 +1,57 @@
+# Entity: new
+
+main: kit: entity: new: {
+
+  alias: field: {}
+
+  fields: [
+    {
+      name: "component_chunk_name"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "path"
+      req: false
+      type: "`$STRING`"
+    }
+    {
+      name: "result"
+      req: false
+      type: "`$OBJECT`"
+    }
+    {
+      name: "static_query_hash"
+      req: false
+      type: "`$ARRAY`"
+    }
+  ]
+
+  name: "new"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          method: "GET"
+          orig: "/page-data/news/page-data.json"
+          parts: [
+            "page-data"
+            "news"
+            "page-data.json"
+          ]
+          select: {
+            "$action": "page_data"
+          }
+          transform: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+
+
+}
