@@ -21,7 +21,7 @@ class Config {
 
 
   main = {
-    name: 'ProjectName',
+    name: 'Istories',
   }
 
 
@@ -56,7 +56,7 @@ class Config {
       "fields": [
         {
           "active": true,
-          "name": "component_chunk_name",
+          "name": "componentChunkName",
           "req": false,
           "type": "`$STRING`",
           "index$": 0
@@ -77,7 +77,7 @@ class Config {
         },
         {
           "active": true,
-          "name": "static_query_hash",
+          "name": "staticQueryHashes",
           "req": false,
           "type": "`$ARRAY`",
           "index$": 3
@@ -92,6 +92,7 @@ class Config {
             {
               "active": true,
               "args": {},
+              "kind": "http",
               "method": "GET",
               "orig": "/page-data/news/page-data.json",
               "parts": [

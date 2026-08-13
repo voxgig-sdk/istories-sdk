@@ -92,10 +92,10 @@ $new = $client->New();
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `component_chunk_name` | `string` | No |  |
+| `componentChunkName` | `string` | No |  |
 | `path` | `string` | No |  |
 | `result` | `array` | No |  |
-| `static_query_hash` | `array` | No |  |
+| `staticQueryHashes` | `array` | No |  |
 
 ### Operations
 

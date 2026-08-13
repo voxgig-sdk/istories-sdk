@@ -93,10 +93,10 @@ new = client.New
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `component_chunk_name` | `String` | No |  |
+| `componentChunkName` | `String` | No |  |
 | `path` | `String` | No |  |
 | `result` | `Hash` | No |  |
-| `static_query_hash` | `Array` | No |  |
+| `staticQueryHashes` | `Array` | No |  |
 
 ### Operations
 

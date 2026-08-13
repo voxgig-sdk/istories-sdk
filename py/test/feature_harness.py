@@ -14,12 +14,12 @@ from __future__ import annotations
 
 from urllib.parse import quote
 
-from config import make_config
-from features import _make_feature
-from core.control import IstoriesControl
-from core.error import IstoriesError
-from core.result import IstoriesResult
-from core.spec import IstoriesSpec
+from istories_sdk.config import make_config
+from istories_sdk.features import _make_feature
+from istories_sdk.core.control import IstoriesControl
+from istories_sdk.core.error import IstoriesError
+from istories_sdk.core.result import IstoriesResult
+from istories_sdk.core.spec import IstoriesSpec
 
 
 # True when this SDK was generated with the named feature.

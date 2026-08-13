@@ -1,4 +1,4 @@
-# ProjectName SDK exists test
+# Istories SDK exists test
 
 import pytest
 from istories_sdk import IstoriesSDK

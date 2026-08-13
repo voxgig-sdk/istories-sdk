@@ -7,16 +7,16 @@
 -- edit by hand.
 
 ---@class New
----@field component_chunk_name? string
+---@field componentChunkName? string
 ---@field path? string
 ---@field result? table
----@field static_query_hash? table
+---@field staticQueryHashes? table
 
 ---@class NewListMatch
----@field component_chunk_name? string
+---@field componentChunkName? string
 ---@field path? string
 ---@field result? table
----@field static_query_hash? table
+---@field staticQueryHashes? table
 
 local M = {}
 

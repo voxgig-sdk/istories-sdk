@@ -6,7 +6,7 @@ main: kit: entity: new: {
 
   fields: [
     {
-      name: "component_chunk_name"
+      name: "componentChunkName"
       req: false
       type: "`$STRING`"
     }
@@ -21,7 +21,7 @@ main: kit: entity: new: {
       type: "`$OBJECT`"
     }
     {
-      name: "static_query_hash"
+      name: "staticQueryHashes"
       req: false
       type: "`$ARRAY`"
     }

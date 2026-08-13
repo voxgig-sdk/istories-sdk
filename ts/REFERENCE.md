@@ -116,10 +116,30 @@ const new_ = client.New()
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `component_chunk_name` | `string` | No |  |
+| `componentChunkName` | `string` | No |  |
 | `path` | `string` | No |  |
 | `result` | `Record<string, any>` | No |  |
-| `static_query_hash` | `any[]` | No |  |
+| `staticQueryHashes` | `any[]` | No |  |
+
+### Actions
+
+This entity exposes custom API actions in addition to the standard
+operations. Select one with `$action` in the call's argument; the
+remaining keys are sent as that action's payload.
+
+| Action | Route | Call |
+| --- | --- | --- |
+| `page_data` | `/page-data/news/page-data.json` | `client.New().list({ $action: 'page_data', ... })` |
+
+An action returns that action's OWN response, which is not necessarily a
+New record — check the API definition for its shape.
+
+```ts
+const result = await client.New().list({
+  $action: 'page_data',
+  /* ...the action's own arguments */
+})
+```
 
 ### Operations
 

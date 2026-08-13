@@ -43,7 +43,7 @@ local news, err = client:New():list()
 if err then error(err) end
 
 for _, item in ipairs(news) do
-  print(item["component_chunk_name"])
+  print(item["componentChunkName"])
 end
 ```
 
@@ -218,9 +218,9 @@ data **directly** — there is no wrapper:
 
 Check `err` first (it is non-`nil` on failure), then use `value`:
 
-    local new, err = client:New():load()
+    local new, err = client:New():list()
     if err then error(err) end
-    -- new is the loaded record
+    -- new is the record list
 
 Only `direct()` returns a response envelope — a `table` with `ok`,
 `status`, `headers`, and `data` keys.
@@ -231,10 +231,10 @@ Only `direct()` returns a response envelope — a `table` with `ok`,
 
 | Field | Description |
 | --- | --- |
-| `component_chunk_name` |  |
+| `componentChunkName` |  |
 | `path` |  |
 | `result` |  |
-| `static_query_hash` |  |
+| `staticQueryHashes` |  |
 
 Operations: List.
 
@@ -259,10 +259,10 @@ Create an instance: `local new = client:New(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `component_chunk_name` | `string` |  |
+| `componentChunkName` | `string` |  |
 | `path` | `string` |  |
 | `result` | `table` |  |
-| `static_query_hash` | `table` |  |
+| `staticQueryHashes` | `table` |  |
 
 #### Example: List
 

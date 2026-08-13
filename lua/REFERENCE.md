@@ -90,10 +90,10 @@ local new = client:New(nil)
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `component_chunk_name` | `string` | No |  |
+| `componentChunkName` | `string` | No |  |
 | `path` | `string` | No |  |
 | `result` | `table` | No |  |
-| `static_query_hash` | `table` | No |  |
+| `staticQueryHashes` | `table` | No |  |
 
 ### Operations
 

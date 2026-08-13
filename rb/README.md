@@ -37,7 +37,7 @@ begin
   # list returns an Array of New records — iterate directly.
   news = client.New.list
   news.each do |item|
-    puts "#{item["component_chunk_name"]}"
+    puts "#{item["componentChunkName"]}"
   end
 rescue => err
   warn "list failed: #{err}"
@@ -119,7 +119,8 @@ Create a mock client for unit testing — no server required:
 ```ruby
 client = IstoriesSDK.test
 
-# Entity ops return the bare mock record (raises on error).
+# Entity ops return the ENTITY (raises on error);
+# call data_get for the mock record.
 new = client.New.list()
 puts new
 ```
@@ -236,10 +237,10 @@ returns a result `Hash` with these keys:
 
 | Field | Description |
 | --- | --- |
-| `component_chunk_name` |  |
+| `componentChunkName` |  |
 | `path` |  |
 | `result` |  |
-| `static_query_hash` |  |
+| `staticQueryHashes` |  |
 
 Operations: List.
 
@@ -264,10 +265,10 @@ Create an instance: `new = client.New`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `component_chunk_name` | `String` |  |
+| `componentChunkName` | `String` |  |
 | `path` | `String` |  |
 | `result` | `Hash` |  |
-| `static_query_hash` | `Array` |  |
+| `staticQueryHashes` | `Array` |  |
 
 #### Example: List
 

@@ -26,7 +26,7 @@ func MakeConfig() map[string]any {
 				"fields": []any{
 					map[string]any{
 						"active": true,
-						"name": "component_chunk_name",
+						"name": "componentChunkName",
 						"req": false,
 						"type": "`$STRING`",
 						"index$": 0,
@@ -47,7 +47,7 @@ func MakeConfig() map[string]any {
 					},
 					map[string]any{
 						"active": true,
-						"name": "static_query_hash",
+						"name": "staticQueryHashes",
 						"req": false,
 						"type": "`$ARRAY`",
 						"index$": 3,
@@ -62,6 +62,7 @@ func MakeConfig() map[string]any {
 							map[string]any{
 								"active": true,
 								"args": map[string]any{},
+								"kind": "http",
 								"method": "GET",
 								"orig": "/page-data/news/page-data.json",
 								"parts": []any{
@@ -79,7 +80,6 @@ func MakeConfig() map[string]any {
 								"index$": 0,
 							},
 						},
-						"key$": "list",
 					},
 				},
 				"relations": map[string]any{

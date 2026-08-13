@@ -6,16 +6,22 @@
 // @voxgig/apidef VALID_CANON). Do not edit by hand.
 
 export interface New {
-  component_chunk_name?: string
+  componentChunkName?: string
   path?: string
   result?: Record<string, any>
-  static_query_hash?: any[]
+  staticQueryHashes?: any[]
 }
 
 export interface NewListMatch {
-  component_chunk_name?: string
+  componentChunkName?: string
   path?: string
   result?: Record<string, any>
-  static_query_hash?: any[]
+  staticQueryHashes?: any[]
+
+  // Selects a custom action instead of the plain list:
+  //   'page_data'
+  // The remaining keys are that action's own payload.
+  $action?: string
+  [action: string]: any
 }
 

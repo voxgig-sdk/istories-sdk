@@ -15,18 +15,18 @@ declare(strict_types=1);
 /** New entity data model. */
 class New
 {
-    public ?string $component_chunk_name = null;
+    public ?string $componentChunkName = null;
     public ?string $path = null;
     public ?array $result = null;
-    public ?array $static_query_hash = null;
+    public ?array $staticQueryHashes = null;
 }
 
 /** Request payload for New#list. */
 class NewListMatch
 {
-    public ?string $component_chunk_name = null;
+    public ?string $componentChunkName = null;
     public ?string $path = null;
     public ?array $result = null;
-    public ?array $static_query_hash = null;
+    public ?array $staticQueryHashes = null;
 }
 

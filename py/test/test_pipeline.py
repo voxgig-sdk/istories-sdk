@@ -16,11 +16,11 @@
 import pytest
 
 from istories_sdk import IstoriesSDK
-from core.error import IstoriesError
-from core.result import IstoriesResult
-from core.response import IstoriesResponse
-from core.spec import IstoriesSpec
-from feature.base_feature import IstoriesBaseFeature
+from istories_sdk.core.error import IstoriesError
+from istories_sdk.core.result import IstoriesResult
+from istories_sdk.core.response import IstoriesResponse
+from istories_sdk.core.spec import IstoriesSpec
+from istories_sdk.feature.base_feature import IstoriesBaseFeature
 
 
 def _client():

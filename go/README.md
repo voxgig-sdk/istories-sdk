@@ -260,10 +260,10 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 
 | Field | Description |
 | --- | --- |
-| `"component_chunk_name"` |  |
+| `"componentChunkName"` |  |
 | `"path"` |  |
 | `"result"` |  |
-| `"static_query_hash"` |  |
+| `"staticQueryHashes"` |  |
 
 Operations: List.
 
@@ -288,10 +288,10 @@ Create an instance: `new := client.New(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `component_chunk_name` | `string` |  |
+| `componentChunkName` | `string` |  |
 | `path` | `string` |  |
 | `result` | `map[string]any` |  |
-| `static_query_hash` | `[]any` |  |
+| `staticQueryHashes` | `[]any` |  |
 
 #### Example: List
 

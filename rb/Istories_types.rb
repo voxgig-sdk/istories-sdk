@@ -10,7 +10,7 @@
 
 # New entity data model.
 #
-# @!attribute [rw] component_chunk_name
+# @!attribute [rw] componentChunkName
 #   @return [String, nil]
 #
 # @!attribute [rw] path
@@ -19,19 +19,19 @@
 # @!attribute [rw] result
 #   @return [Hash, nil]
 #
-# @!attribute [rw] static_query_hash
+# @!attribute [rw] staticQueryHashes
 #   @return [Array, nil]
 New = Struct.new(
-  :component_chunk_name,
+  :componentChunkName,
   :path,
   :result,
-  :static_query_hash,
+  :staticQueryHashes,
   keyword_init: true
 )
 
 # Request payload for New#list.
 #
-# @!attribute [rw] component_chunk_name
+# @!attribute [rw] componentChunkName
 #   @return [String, nil]
 #
 # @!attribute [rw] path
@@ -40,13 +40,13 @@ New = Struct.new(
 # @!attribute [rw] result
 #   @return [Hash, nil]
 #
-# @!attribute [rw] static_query_hash
+# @!attribute [rw] staticQueryHashes
 #   @return [Array, nil]
 NewListMatch = Struct.new(
-  :component_chunk_name,
+  :componentChunkName,
   :path,
   :result,
-  :static_query_hash,
+  :staticQueryHashes,
   keyword_init: true
 )
 
