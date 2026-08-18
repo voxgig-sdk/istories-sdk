@@ -40,7 +40,7 @@ class IstoriesSDK
         $utility = new IstoriesUtility();
         $this->_utility = $utility;
 
-        $config = IstoriesConfig::make_config();
+        $config = IstoriesConfig::shared_config();
 
         $this->_rootctx = ($utility->make_context)([
             "client" => $this,

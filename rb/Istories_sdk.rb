@@ -28,7 +28,7 @@ class IstoriesSDK
     utility = IstoriesUtility.new
     @_utility = utility
 
-    config = IstoriesConfig.make_config
+    config = IstoriesConfig.shared_config
 
     @_rootctx = utility.make_context.call({
       "client" => self,
