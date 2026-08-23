@@ -19,6 +19,9 @@ module IstoriesConfig
     {
       "main" => {
         "name" => "Istories",
+        "slug" => "istories",
+        "version" => "0.0.1",
+        "target" => "rb",
       },
       "feature" => {
         "test" => {
@@ -41,10 +44,12 @@ module IstoriesConfig
           "fields" => [
             {
               "name" => "componentChunkName",
+              "short" => "Component chunk identifier",
               "type" => "`$STRING`",
             },
             {
               "name" => "path",
+              "short" => "Page path",
               "type" => "`$STRING`",
             },
             {
@@ -53,6 +58,7 @@ module IstoriesConfig
             },
             {
               "name" => "staticQueryHashes",
+              "short" => "Static query hashes",
               "type" => "`$ARRAY`",
             },
           ],

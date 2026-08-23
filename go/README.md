@@ -6,7 +6,7 @@ The Golang SDK for the Istories API — an entity-oriented client using standard
 
 It exposes the API as capitalised, semantic **Entities** — e.g. `client.New(nil)` — each with the same small set of operations (`List`) instead of raw URL paths and query strings. You call meaning, not endpoints, which keeps the cognitive load low.
 
-> Other languages, the CLI, and MCP server live alongside this one — see
+> Also generated from this model: `go-cli`, `go-mcp`, `lua`, `php`, `py`, `rb`, `ts` — see
 > the [top-level README](../README.md).
 
 
@@ -260,10 +260,10 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 
 | Field | Description |
 | --- | --- |
-| `"componentChunkName"` |  |
-| `"path"` |  |
+| `"componentChunkName"` | Component chunk identifier |
+| `"path"` | Page path |
 | `"result"` |  |
-| `"staticQueryHashes"` |  |
+| `"staticQueryHashes"` | Static query hashes |
 
 Operations: List.
 
@@ -288,10 +288,10 @@ Create an instance: `new := client.New(nil)`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `componentChunkName` | `string` |  |
-| `path` | `string` |  |
+| `componentChunkName` | `string` | Component chunk identifier |
+| `path` | `string` | Page path |
 | `result` | `map[string]any` |  |
-| `staticQueryHashes` | `[]any` |  |
+| `staticQueryHashes` | `[]any` | Static query hashes |
 
 #### Example: List
 

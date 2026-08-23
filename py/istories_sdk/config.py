@@ -28,6 +28,9 @@ def make_config():
     return {
         "main": {
             "name": "Istories",
+            "slug": "istories",
+            "version": "0.0.1",
+            "target": "py",
         },
         "feature": {
             "test": {
@@ -50,10 +53,12 @@ def make_config():
         "fields": [
           {
             "name": "componentChunkName",
+            "short": "Component chunk identifier",
             "type": "`$STRING`",
           },
           {
             "name": "path",
+            "short": "Page path",
             "type": "`$STRING`",
           },
           {
@@ -62,6 +67,7 @@ def make_config():
           },
           {
             "name": "staticQueryHashes",
+            "short": "Static query hashes",
             "type": "`$ARRAY`",
           },
         ],

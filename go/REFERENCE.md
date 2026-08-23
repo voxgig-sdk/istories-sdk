@@ -98,10 +98,10 @@ fmt.Println(new.GetName()) // "new"
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `componentChunkName` | `string` | No |  |
-| `path` | `string` | No |  |
+| `componentChunkName` | `string` | No | Component chunk identifier |
+| `path` | `string` | No | Page path |
 | `result` | `map[string]any` | No |  |
-| `staticQueryHashes` | `[]any` | No |  |
+| `staticQueryHashes` | `[]any` | No | Static query hashes |
 
 ### Operations
 

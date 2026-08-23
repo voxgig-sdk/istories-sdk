@@ -237,10 +237,10 @@ returns a result `Hash` with these keys:
 
 | Field | Description |
 | --- | --- |
-| `componentChunkName` |  |
-| `path` |  |
+| `componentChunkName` | Component chunk identifier |
+| `path` | Page path |
 | `result` |  |
-| `staticQueryHashes` |  |
+| `staticQueryHashes` | Static query hashes |
 
 Operations: List.
 
@@ -265,10 +265,10 @@ Create an instance: `new = client.New`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `componentChunkName` | `String` |  |
-| `path` | `String` |  |
+| `componentChunkName` | `String` | Component chunk identifier |
+| `path` | `String` | Page path |
 | `result` | `Hash` |  |
-| `staticQueryHashes` | `Array` |  |
+| `staticQueryHashes` | `Array` | Static query hashes |
 
 #### Example: List
 

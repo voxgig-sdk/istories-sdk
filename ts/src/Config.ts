@@ -19,9 +19,20 @@ class Config {
     return fi
   }
 
+  // False for a feature added at runtime via options.extend (station's
+  // adopt path) - the constructor uses this to skip makeFeature for names
+  // no generated class backs.
+  hasFeature(this: any, fn: string) {
+    return null != FEATURE_CLASS[fn]
+  }
+
 
   main = {
     name: 'Istories',
+        slug: "istories",
+    version: "0.0.1",
+    target: "ts",
+
   }
 
 
@@ -56,10 +67,12 @@ class Config {
       "fields": [
         {
           "name": "componentChunkName",
+          "short": "Component chunk identifier",
           "type": "`$STRING`"
         },
         {
           "name": "path",
+          "short": "Page path",
           "type": "`$STRING`"
         },
         {
@@ -68,6 +81,7 @@ class Config {
         },
         {
           "name": "staticQueryHashes",
+          "short": "Static query hashes",
           "type": "`$ARRAY`"
         }
       ],

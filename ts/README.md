@@ -9,7 +9,7 @@ The API is exposed as capitalised, semantic **Entities** — e.g.
 instead of raw URL paths and query parameters. This keeps the surface
 predictable and low-friction for both humans and AI agents.
 
-> Other languages, the CLI, and MCP server live alongside this one — see
+> Also generated from this model: `go`, `go-cli`, `go-mcp`, `lua`, `php`, `py`, `rb` — see
 > the [top-level README](../README.md).
 
 
@@ -287,10 +287,10 @@ The `prepare()` method returns:
 
 | Field | Description |
 | --- | --- |
-| `componentChunkName` |  |
-| `path` |  |
+| `componentChunkName` | Component chunk identifier |
+| `path` | Page path |
 | `result` |  |
-| `staticQueryHashes` |  |
+| `staticQueryHashes` | Static query hashes |
 
 Operations: list.
 
@@ -315,10 +315,10 @@ Create an instance: `const new_ = client.New()`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `componentChunkName` | `string` |  |
-| `path` | `string` |  |
+| `componentChunkName` | `string` | Component chunk identifier |
+| `path` | `string` | Page path |
 | `result` | `Record<string, any>` |  |
-| `staticQueryHashes` | `any[]` |  |
+| `staticQueryHashes` | `any[]` | Static query hashes |
 
 #### Example: List
 

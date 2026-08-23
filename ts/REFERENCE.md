@@ -116,10 +116,10 @@ const new_ = client.New()
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `componentChunkName` | `string` | No |  |
-| `path` | `string` | No |  |
+| `componentChunkName` | `string` | No | Component chunk identifier |
+| `path` | `string` | No | Page path |
 | `result` | `Record<string, any>` | No |  |
-| `staticQueryHashes` | `any[]` | No |  |
+| `staticQueryHashes` | `any[]` | No | Static query hashes |
 
 ### Actions
 

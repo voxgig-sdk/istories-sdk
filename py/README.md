@@ -243,10 +243,10 @@ On error, `ok` is `False` and `err` contains the error value.
 
 | Field | Description |
 | --- | --- |
-| `componentChunkName` |  |
-| `path` |  |
+| `componentChunkName` | Component chunk identifier |
+| `path` | Page path |
 | `result` |  |
-| `staticQueryHashes` |  |
+| `staticQueryHashes` | Static query hashes |
 
 Operations: List.
 
@@ -271,10 +271,10 @@ Create an instance: `new = client.New()`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `componentChunkName` | `str` |  |
-| `path` | `str` |  |
+| `componentChunkName` | `str` | Component chunk identifier |
+| `path` | `str` | Page path |
 | `result` | `dict` |  |
-| `staticQueryHashes` | `list` |  |
+| `staticQueryHashes` | `list` | Static query hashes |
 
 #### Example: List
 

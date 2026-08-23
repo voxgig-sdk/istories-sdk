@@ -8,11 +8,13 @@ main: kit: entity: new: {
     {
       name: "componentChunkName"
       req: false
+      short: "Component chunk identifier"
       type: "`$STRING`"
     }
     {
       name: "path"
       req: false
+      short: "Page path"
       type: "`$STRING`"
     }
     {
@@ -23,6 +25,7 @@ main: kit: entity: new: {
     {
       name: "staticQueryHashes"
       req: false
+      short: "Static query hashes"
       type: "`$ARRAY`"
     }
   ]

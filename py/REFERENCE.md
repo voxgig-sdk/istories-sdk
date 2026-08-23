@@ -87,10 +87,10 @@ new = client.New()
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `componentChunkName` | `str` | No |  |
-| `path` | `str` | No |  |
+| `componentChunkName` | `str` | No | Component chunk identifier |
+| `path` | `str` | No | Page path |
 | `result` | `dict` | No |  |
-| `staticQueryHashes` | `list` | No |  |
+| `staticQueryHashes` | `list` | No | Static query hashes |
 
 ### Operations
 

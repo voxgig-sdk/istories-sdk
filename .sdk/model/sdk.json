@@ -36,12 +36,14 @@
               "active": true,
               "name": "componentChunkName",
               "req": false,
+              "short": "Component chunk identifier",
               "type": "`$STRING`"
             },
             {
               "active": true,
               "name": "path",
               "req": false,
+              "short": "Page path",
               "type": "`$STRING`"
             },
             {
@@ -54,6 +56,7 @@
               "active": true,
               "name": "staticQueryHashes",
               "req": false,
+              "short": "Static query hashes",
               "type": "`$ARRAY`"
             }
           ],

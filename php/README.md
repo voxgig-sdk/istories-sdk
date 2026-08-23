@@ -247,10 +247,10 @@ On error, `ok` is `false` and `$err` contains the error value.
 
 | Field | Description |
 | --- | --- |
-| `componentChunkName` |  |
-| `path` |  |
+| `componentChunkName` | Component chunk identifier |
+| `path` | Page path |
 | `result` |  |
-| `staticQueryHashes` |  |
+| `staticQueryHashes` | Static query hashes |
 
 Operations: List.
 
@@ -275,10 +275,10 @@ Create an instance: `$new = $client->New();`
 
 | Field | Type | Description |
 | --- | --- | --- |
-| `componentChunkName` | `string` |  |
-| `path` | `string` |  |
+| `componentChunkName` | `string` | Component chunk identifier |
+| `path` | `string` | Page path |
 | `result` | `array` |  |
-| `staticQueryHashes` | `array` |  |
+| `staticQueryHashes` | `array` | Static query hashes |
 
 #### Example: List
 

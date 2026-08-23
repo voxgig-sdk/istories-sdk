@@ -92,10 +92,10 @@ $new = $client->New();
 
 | Field | Type | Required | Description |
 | --- | --- | --- | --- |
-| `componentChunkName` | `string` | No |  |
-| `path` | `string` | No |  |
+| `componentChunkName` | `string` | No | Component chunk identifier |
+| `path` | `string` | No | Page path |
 | `result` | `array` | No |  |
-| `staticQueryHashes` | `array` | No |  |
+| `staticQueryHashes` | `array` | No | Static query hashes |
 
 ### Operations
 
