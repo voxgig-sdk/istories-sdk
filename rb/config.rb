@@ -74,10 +74,16 @@ module IstoriesConfig
                   "kind" => "http",
                   "method" => "GET",
                   "orig" => "/page-data/news/page-data.json",
-                  "parts" => [
-                    "page-data",
-                    "news",
-                    "page-data.json",
+                  "segments" => [
+                    {
+                      "lit" => "page-data",
+                    },
+                    {
+                      "lit" => "news",
+                    },
+                    {
+                      "lit" => "page-data.json",
+                    },
                   ],
                   "select" => {
                     "$action" => "page_data",
@@ -86,6 +92,11 @@ module IstoriesConfig
                     "req" => "`reqdata`",
                     "res" => "`body`",
                   },
+                  "parts" => [
+                    "page-data",
+                    "news",
+                    "page-data.json",
+                  ],
                 },
               ],
             },

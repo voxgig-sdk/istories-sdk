@@ -62,10 +62,16 @@ local function make_config()
                 ["kind"] = "http",
                 ["method"] = "GET",
                 ["orig"] = "/page-data/news/page-data.json",
-                ["parts"] = {
-                  "page-data",
-                  "news",
-                  "page-data.json",
+                ["segments"] = {
+                  {
+                    ["lit"] = "page-data",
+                  },
+                  {
+                    ["lit"] = "news",
+                  },
+                  {
+                    ["lit"] = "page-data.json",
+                  },
                 },
                 ["select"] = {
                   ["$action"] = "page_data",
@@ -73,6 +79,11 @@ local function make_config()
                 ["transform"] = {
                   ["req"] = "`reqdata`",
                   ["res"] = "`body`",
+                },
+                ["parts"] = {
+                  "page-data",
+                  "news",
+                  "page-data.json",
                 },
               },
             },
