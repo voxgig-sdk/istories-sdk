@@ -105,7 +105,7 @@ local results, err = client:New():list()
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/istories` | publish pending — [install from git tag](https://github.com/voxgig-sdk/istories-sdk/releases) |
+| TypeScript | `@voxgig-sdk/istories-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/istories-sdk/releases) |
 | Python | `voxgig-sdk-istories` | publish pending — [install from git tag](https://github.com/voxgig-sdk/istories-sdk/releases) |
 | PHP | `voxgig-sdk/istories` | publish pending — [install from git tag](https://github.com/voxgig-sdk/istories-sdk/releases) |
 | Golang | `github.com/voxgig-sdk/istories-sdk/go` | `go get github.com/voxgig-sdk/istories-sdk/go@latest` |
@@ -119,7 +119,7 @@ local results, err = client:New():list()
 ### TypeScript
 
 ```ts
-import { IstoriesSDK } from '@voxgig-sdk/istories'
+import { IstoriesSDK } from '@voxgig-sdk/istories-sdk'
 
 const client = new IstoriesSDK()
 

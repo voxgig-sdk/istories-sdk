@@ -28,7 +28,7 @@ loading a specific record.
 ### 1. Create a client
 
 ```ts
-import { IstoriesSDK } from '@voxgig-sdk/istories'
+import { IstoriesSDK } from '@voxgig-sdk/istories-sdk'
 
 const client = new IstoriesSDK()
 ```
@@ -409,7 +409,7 @@ istories/
 Import the SDK from the package root:
 
 ```ts
-import { IstoriesSDK } from '@voxgig-sdk/istories'
+import { IstoriesSDK } from '@voxgig-sdk/istories-sdk'
 ```
 
 ### Entity state
