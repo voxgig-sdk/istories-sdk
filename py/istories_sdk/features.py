@@ -1,12 +1,18 @@
 # Istories SDK feature factory
 
 from istories_sdk.feature.base_feature import IstoriesBaseFeature
+from istories_sdk.feature.ratelimit_feature import IstoriesRatelimitFeature
+from istories_sdk.feature.retry_feature import IstoriesRetryFeature
 from istories_sdk.feature.test_feature import IstoriesTestFeature
+from istories_sdk.feature.timeout_feature import IstoriesTimeoutFeature
 
 
 _FEATURES = {
     "base": lambda: IstoriesBaseFeature(),
+    "ratelimit": lambda: IstoriesRatelimitFeature(),
+    "retry": lambda: IstoriesRetryFeature(),
     "test": lambda: IstoriesTestFeature(),
+    "timeout": lambda: IstoriesTimeoutFeature(),
 }
 
 

@@ -36,6 +36,12 @@ main: kit: entity: new: {
       name: "list"
       points: [
         {
+          contract: {
+            id: "GET /page-data/news/page-data.json"
+            json: "{\"operationId\":\"getNews\",\"parameters\":[],\"protocol\":\"http\",\"responses\":{\"200\":{\"content\":{\"application/json\":{\"schema\":{\"properties\":{\"componentChunkName\":{\"description\":\"Component chunk identifier\",\"type\":\"string\"},\"path\":{\"description\":\"Page path\",\"type\":\"string\"},\"result\":{\"properties\":{\"data\":{\"description\":\"Contains the news data and page information\",\"type\":\"object\"},\"pageContext\":{\"description\":\"Page context information\",\"type\":\"object\"}},\"type\":\"object\"},\"staticQueryHashes\":{\"description\":\"Static query hashes\",\"items\":{\"type\":\"string\"},\"type\":\"array\"}},\"type\":\"object\"}}},\"description\":\"Successful response containing news data\"},\"400\":{\"description\":\"Bad request\"},\"500\":{\"description\":\"Internal server error\"}},\"securitySource\":\"unspecified\"}"
+            source: "openapi3"
+            version: 1
+          }
           method: "GET"
           orig: "/page-data/news/page-data.json"
           segments: [
