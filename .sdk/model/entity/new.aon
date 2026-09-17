@@ -4,32 +4,6 @@ main: kit: entity: new: {
 
   alias: field: {}
 
-  fields: [
-    {
-      name: "componentChunkName"
-      req: false
-      short: "Component chunk identifier"
-      type: "`$STRING`"
-    }
-    {
-      name: "path"
-      req: false
-      short: "Page path"
-      type: "`$STRING`"
-    }
-    {
-      name: "result"
-      req: false
-      type: "`$OBJECT`"
-    }
-    {
-      name: "staticQueryHashes"
-      req: false
-      short: "Static query hashes"
-      type: "`$ARRAY`"
-    }
-  ]
-
   name: "new"
   op: {
     list: {

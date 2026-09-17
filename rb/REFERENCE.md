@@ -89,15 +89,6 @@ same parameters as `direct()`. Raises on error.
 new = client.New
 ```
 
-### Fields
-
-| Field | Type | Required | Description |
-| --- | --- | --- | --- |
-| `componentChunkName` | `String` | No | Component chunk identifier |
-| `path` | `String` | No | Page path |
-| `result` | `Hash` | No |  |
-| `staticQueryHashes` | `Array` | No | Static query hashes |
-
 ### Operations
 
 #### `list(reqmatch = nil, ctrl = nil) -> Array`

@@ -260,10 +260,6 @@ Only `Direct()` returns a response envelope — a `map[string]any` with
 
 | Field | Description |
 | --- | --- |
-| `"componentChunkName"` | Component chunk identifier |
-| `"path"` | Page path |
-| `"result"` |  |
-| `"staticQueryHashes"` | Static query hashes |
 
 Operations: List.
 
@@ -283,15 +279,6 @@ Create an instance: `new := client.New(nil)`
 | Method | Description |
 | --- | --- |
 | `List(match, ctrl)` | List entities matching the criteria. |
-
-#### Fields
-
-| Field | Type | Description |
-| --- | --- | --- |
-| `componentChunkName` | `string` | Component chunk identifier |
-| `path` | `string` | Page path |
-| `result` | `map[string]any` |  |
-| `staticQueryHashes` | `[]any` | Static query hashes |
 
 #### Example: List
 

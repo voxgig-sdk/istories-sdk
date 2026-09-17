@@ -1,34 +1,14 @@
 {
   "existing": {
     "new": {
-      "NEW00": {
-        "componentChunkName": "s28",
-        "path": "s29",
-        "result": {},
-        "staticQueryHashes": []
-      },
-      "NEW01": {
-        "componentChunkName": "s50",
-        "path": "s51",
-        "result": {},
-        "staticQueryHashes": []
-      },
-      "NEW02": {
-        "componentChunkName": "s78",
-        "path": "s79",
-        "result": {},
-        "staticQueryHashes": []
-      }
+      "NEW00": {},
+      "NEW01": {},
+      "NEW02": {}
     }
   },
   "new": {
     "new": {
-      "new_ref01": {
-        "componentChunkName": "sa0",
-        "path": "sa1",
-        "result": {},
-        "staticQueryHashes": []
-      }
+      "new_ref01": {}
     }
   },
   "requests": {

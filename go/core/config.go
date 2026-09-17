@@ -88,27 +88,7 @@ func MakeConfig() map[string]any {
 		},
 		"entity": map[string]any{
 			"new": map[string]any{
-				"fields": []any{
-					map[string]any{
-						"name": "componentChunkName",
-						"short": "Component chunk identifier",
-						"type": "`$STRING`",
-					},
-					map[string]any{
-						"name": "path",
-						"short": "Page path",
-						"type": "`$STRING`",
-					},
-					map[string]any{
-						"name": "result",
-						"type": "`$OBJECT`",
-					},
-					map[string]any{
-						"name": "staticQueryHashes",
-						"short": "Static query hashes",
-						"type": "`$ARRAY`",
-					},
-				},
+				"fields": []any{},
 				"name": "new",
 				"op": map[string]any{
 					"list": map[string]any{

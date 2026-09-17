@@ -14,18 +14,10 @@ import (
 
 // New is the typed data model for the new entity.
 type New struct {
-	ComponentChunkName *string `json:"componentChunkName,omitempty"`
-	Path *string `json:"path,omitempty"`
-	Result *map[string]any `json:"result,omitempty"`
-	StaticQueryHashes *[]any `json:"staticQueryHashes,omitempty"`
 }
 
 // NewListMatch is the typed request payload for New.ListTyped.
 type NewListMatch struct {
-	ComponentChunkName *string `json:"componentChunkName,omitempty"`
-	Path *string `json:"path,omitempty"`
-	Result *map[string]any `json:"result,omitempty"`
-	StaticQueryHashes *[]any `json:"staticQueryHashes,omitempty"`
 }
 
 // asMap turns a typed request/data struct into the map[string]any the

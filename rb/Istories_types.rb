@@ -9,44 +9,10 @@
 # annotations document the shapes. Do not edit by hand.
 
 # New entity data model.
-#
-# @!attribute [rw] componentChunkName
-#   @return [String, nil]
-#
-# @!attribute [rw] path
-#   @return [String, nil]
-#
-# @!attribute [rw] result
-#   @return [Hash, nil]
-#
-# @!attribute [rw] staticQueryHashes
-#   @return [Array, nil]
-New = Struct.new(
-  :componentChunkName,
-  :path,
-  :result,
-  :staticQueryHashes,
-  keyword_init: true
-)
+class New
+end
 
 # Request payload for New#list.
-#
-# @!attribute [rw] componentChunkName
-#   @return [String, nil]
-#
-# @!attribute [rw] path
-#   @return [String, nil]
-#
-# @!attribute [rw] result
-#   @return [Hash, nil]
-#
-# @!attribute [rw] staticQueryHashes
-#   @return [Array, nil]
-NewListMatch = Struct.new(
-  :componentChunkName,
-  :path,
-  :result,
-  :staticQueryHashes,
-  keyword_init: true
-)
+class NewListMatch
+end
 

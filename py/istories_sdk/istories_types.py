@@ -16,15 +16,9 @@ from __future__ import annotations
 from typing import TypedDict, Any
 
 
-class New(TypedDict, total=False):
-    componentChunkName: str
-    path: str
-    result: dict
-    staticQueryHashes: list
+class New(TypedDict):
+    pass
 
 
-class NewListMatch(TypedDict, total=False):
-    componentChunkName: str
-    path: str
-    result: dict
-    staticQueryHashes: list
+class NewListMatch(TypedDict):
+    pass

@@ -43,7 +43,7 @@ local news, err = client:New():list()
 if err then error(err) end
 
 for _, item in ipairs(news) do
-  print(item["componentChunkName"])
+  print(item)
 end
 ```
 
@@ -231,10 +231,6 @@ Only `direct()` returns a response envelope — a `table` with `ok`,
 
 | Field | Description |
 | --- | --- |
-| `componentChunkName` | Component chunk identifier |
-| `path` | Page path |
-| `result` |  |
-| `staticQueryHashes` | Static query hashes |
 
 Operations: List.
 
@@ -254,15 +250,6 @@ Create an instance: `local new = client:New(nil)`
 | Method | Description |
 | --- | --- |
 | `list(match)` | List entities matching the criteria. |
-
-#### Fields
-
-| Field | Type | Description |
-| --- | --- | --- |
-| `componentChunkName` | `string` | Component chunk identifier |
-| `path` | `string` | Page path |
-| `result` | `table` |  |
-| `staticQueryHashes` | `table` | Static query hashes |
 
 #### Example: List
 
@@ -413,6 +400,7 @@ Use `helpers.to_map()` to safely validate that a value is a table.
 lua/
 ├── istories_sdk.lua    -- Main SDK module
 ├── config.lua               -- Configuration
+├── schema.lua               -- Generated option + entity specs
 ├── features.lua             -- Feature factory
 ├── core/                    -- Core types and context
 ├── entity/                  -- Entity implementations

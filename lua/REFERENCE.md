@@ -86,15 +86,6 @@ same parameters as `direct()`.
 local new = client:New(nil)
 ```
 
-### Fields
-
-| Field | Type | Required | Description |
-| --- | --- | --- | --- |
-| `componentChunkName` | `string` | No | Component chunk identifier |
-| `path` | `string` | No | Page path |
-| `result` | `table` | No |  |
-| `staticQueryHashes` | `table` | No | Static query hashes |
-
 ### Operations
 
 #### `list(reqmatch, ctrl) -> any, err`

@@ -105,12 +105,12 @@ local results, err = client:New():list()
 
 | Language | Package | Install |
 | --- | --- | --- |
-| TypeScript | `@voxgig-sdk/istories-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/istories-sdk/releases) |
-| Python | `voxgig-sdk-istories` | publish pending — [install from git tag](https://github.com/voxgig-sdk/istories-sdk/releases) |
-| PHP | `voxgig-sdk/istories` | publish pending — [install from git tag](https://github.com/voxgig-sdk/istories-sdk/releases) |
+| TypeScript | `@voxgig-sdk/istories-sdk` | publish pending — [install from git tag](https://github.com/voxgig-sdk/istories-sdk/tags) |
+| Python | `voxgig-sdk-istories` | publish pending — [install from git tag](https://github.com/voxgig-sdk/istories-sdk/tags) |
+| PHP | `voxgig-sdk/istories` | publish pending — [install from git tag](https://github.com/voxgig-sdk/istories-sdk/tags) |
 | Golang | `github.com/voxgig-sdk/istories-sdk/go` | `go get github.com/voxgig-sdk/istories-sdk/go@latest` |
-| Ruby | `voxgig-sdk-istories` | publish pending — [install from git tag](https://github.com/voxgig-sdk/istories-sdk/releases) |
-| Lua | `voxgig-sdk-istories` | publish pending — [install from git tag](https://github.com/voxgig-sdk/istories-sdk/releases) |
+| Ruby | `voxgig-sdk-istories` | publish pending — [install from git tag](https://github.com/voxgig-sdk/istories-sdk/tags) |
+| Lua | `voxgig-sdk-istories` | publish pending — [install from git tag](https://github.com/voxgig-sdk/istories-sdk/tags) |
 | Go CLI | `github.com/voxgig-sdk/istories-sdk/go-cli` | `go install github.com/voxgig-sdk/istories-sdk/go-cli/cmd/istories@latest` |
 | Go MCP server | `github.com/voxgig-sdk/istories-sdk/go-mcp` | `go get github.com/voxgig-sdk/istories-sdk/go-mcp@latest` |
 

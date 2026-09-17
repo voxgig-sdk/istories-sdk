@@ -243,10 +243,6 @@ On error, `ok` is `False` and `err` contains the error value.
 
 | Field | Description |
 | --- | --- |
-| `componentChunkName` | Component chunk identifier |
-| `path` | Page path |
-| `result` |  |
-| `staticQueryHashes` | Static query hashes |
 
 Operations: List.
 
@@ -266,15 +262,6 @@ Create an instance: `new = client.New()`
 | Method | Description |
 | --- | --- |
 | `list()` | List entities, optionally matching the given criteria. |
-
-#### Fields
-
-| Field | Type | Description |
-| --- | --- | --- |
-| `componentChunkName` | `str` | Component chunk identifier |
-| `path` | `str` | Page path |
-| `result` | `dict` |  |
-| `staticQueryHashes` | `list` | Static query hashes |
 
 #### Example: List
 
@@ -425,6 +412,7 @@ Use `helpers.to_map()` to safely validate that a value is a dict.
 py/
 ├── istories_sdk.py         -- Main SDK module
 ├── config.py                    -- Configuration
+├── schema.py                    -- Generated option + entity specs
 ├── features.py                  -- Feature factory
 ├── core/                        -- Core types and context
 ├── entity/                      -- Entity implementations

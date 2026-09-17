@@ -112,15 +112,6 @@ Alias for `IstoriesSDK.test()`.
 const new_ = client.New()
 ```
 
-### Fields
-
-| Field | Type | Required | Description |
-| --- | --- | --- | --- |
-| `componentChunkName` | `string` | No | Component chunk identifier |
-| `path` | `string` | No | Page path |
-| `result` | `Record<string, any>` | No |  |
-| `staticQueryHashes` | `any[]` | No | Static query hashes |
-
 ### Actions
 
 This entity exposes custom API actions in addition to the standard

@@ -88,15 +88,6 @@ Prepare a fetch definition without sending the request. Returns the
 $new = $client->New();
 ```
 
-### Fields
-
-| Field | Type | Required | Description |
-| --- | --- | --- | --- |
-| `componentChunkName` | `string` | No | Component chunk identifier |
-| `path` | `string` | No | Page path |
-| `result` | `array` | No |  |
-| `staticQueryHashes` | `array` | No | Static query hashes |
-
 ### Operations
 
 #### `list(?array $reqmatch = null, ?array $ctrl = null): mixed`

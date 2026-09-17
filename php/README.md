@@ -39,7 +39,7 @@ try {
     $news = $client->New()->list();
     foreach ($news as $record) {
         $item = $record->data_get();
-        echo $item["componentChunkName"] . "\n";
+        echo json_encode($item) . "\n";
     }
 } catch (\Throwable $err) {
     echo "Error: " . $err->getMessage();
@@ -248,10 +248,6 @@ On error, `ok` is `false` and `$err` contains the error value.
 
 | Field | Description |
 | --- | --- |
-| `componentChunkName` | Component chunk identifier |
-| `path` | Page path |
-| `result` |  |
-| `staticQueryHashes` | Static query hashes |
 
 Operations: List.
 
@@ -271,15 +267,6 @@ Create an instance: `$new = $client->New();`
 | Method | Description |
 | --- | --- |
 | `list(match)` | List entities matching the criteria. |
-
-#### Fields
-
-| Field | Type | Description |
-| --- | --- | --- |
-| `componentChunkName` | `string` | Component chunk identifier |
-| `path` | `string` | Page path |
-| `result` | `array` |  |
-| `staticQueryHashes` | `array` | Static query hashes |
 
 #### Example: List
 
@@ -431,6 +418,7 @@ Use `Helpers::to_map()` to safely validate that a value is an array.
 php/
 ├── istories_sdk.php          -- Main SDK class
 ├── config.php                     -- Configuration
+├── schema.php                     -- Generated option + entity specs
 ├── features.php                   -- Feature factory
 ├── core/                          -- Core types and context
 ├── entity/                        -- Entity implementations

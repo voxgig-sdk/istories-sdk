@@ -292,10 +292,6 @@ The `prepare()` method returns:
 
 | Field | Description |
 | --- | --- |
-| `componentChunkName` | Component chunk identifier |
-| `path` | Page path |
-| `result` |  |
-| `staticQueryHashes` | Static query hashes |
 
 Operations: list.
 
@@ -315,15 +311,6 @@ Create an instance: `const new_ = client.New()`
 | Method | Description |
 | --- | --- |
 | `list(match)` | List entities matching the criteria. |
-
-#### Fields
-
-| Field | Type | Description |
-| --- | --- | --- |
-| `componentChunkName` | `string` | Component chunk identifier |
-| `path` | `string` | Page path |
-| `result` | `Record<string, any>` |  |
-| `staticQueryHashes` | `any[]` | Static query hashes |
 
 #### Example: List
 

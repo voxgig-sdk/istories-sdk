@@ -83,15 +83,6 @@ Prepare a fetch definition without sending. Returns the `fetchdef` and raises on
 new = client.New()
 ```
 
-### Fields
-
-| Field | Type | Required | Description |
-| --- | --- | --- | --- |
-| `componentChunkName` | `str` | No | Component chunk identifier |
-| `path` | `str` | No | Page path |
-| `result` | `dict` | No |  |
-| `staticQueryHashes` | `list` | No | Static query hashes |
-
 ### Operations
 
 #### `list(reqmatch=None, ctrl=None) -> list`

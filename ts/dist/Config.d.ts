@@ -74,15 +74,7 @@ declare class Config {
     };
     entity: {
         new: {
-            fields: ({
-                name: string;
-                short: string;
-                type: string;
-            } | {
-                name: string;
-                type: string;
-                short?: undefined;
-            })[];
+            fields: never[];
             name: string;
             op: {
                 list: {

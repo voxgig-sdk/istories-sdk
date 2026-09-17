@@ -37,7 +37,7 @@ begin
   # list returns an Array of New records — iterate directly.
   news = client.New.list
   news.each do |item|
-    puts "#{item["componentChunkName"]}"
+    puts "#{item}"
   end
 rescue => err
   warn "list failed: #{err}"
@@ -237,10 +237,6 @@ returns a result `Hash` with these keys:
 
 | Field | Description |
 | --- | --- |
-| `componentChunkName` | Component chunk identifier |
-| `path` | Page path |
-| `result` |  |
-| `staticQueryHashes` | Static query hashes |
 
 Operations: List.
 
@@ -260,15 +256,6 @@ Create an instance: `new = client.New`
 | Method | Description |
 | --- | --- |
 | `list(match)` | List entities matching the criteria. |
-
-#### Fields
-
-| Field | Type | Description |
-| --- | --- | --- |
-| `componentChunkName` | `String` | Component chunk identifier |
-| `path` | `String` | Page path |
-| `result` | `Hash` |  |
-| `staticQueryHashes` | `Array` | Static query hashes |
 
 #### Example: List
 
@@ -420,6 +407,7 @@ Use `Helpers.to_map()` to safely validate that a value is a hash.
 rb/
 ├── Istories_sdk.rb       -- Main SDK module
 ├── config.rb                  -- Configuration
+├── schema.rb                  -- Generated option + entity specs
 ├── features.rb                -- Feature factory
 ├── core/                      -- Core types and context
 ├── entity/                    -- Entity implementations

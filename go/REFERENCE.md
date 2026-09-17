@@ -94,15 +94,6 @@ new := client.New(nil)
 fmt.Println(new.GetName()) // "new"
 ```
 
-### Fields
-
-| Field | Type | Required | Description |
-| --- | --- | --- | --- |
-| `componentChunkName` | `string` | No | Component chunk identifier |
-| `path` | `string` | No | Page path |
-| `result` | `map[string]any` | No |  |
-| `staticQueryHashes` | `[]any` | No | Static query hashes |
-
 ### Operations
 
 #### `List(reqmatch, ctrl map[string]any) (any, error)`

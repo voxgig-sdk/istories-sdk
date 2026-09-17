@@ -111,27 +111,7 @@ class Config {
     };
     entity = {
         "new": {
-            "fields": [
-                {
-                    "name": "componentChunkName",
-                    "short": "Component chunk identifier",
-                    "type": "`$STRING`"
-                },
-                {
-                    "name": "path",
-                    "short": "Page path",
-                    "type": "`$STRING`"
-                },
-                {
-                    "name": "result",
-                    "type": "`$OBJECT`"
-                },
-                {
-                    "name": "staticQueryHashes",
-                    "short": "Static query hashes",
-                    "type": "`$ARRAY`"
-                }
-            ],
+            "fields": [],
             "name": "new",
             "op": {
                 "list": {
