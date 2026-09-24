@@ -19,7 +19,6 @@ import type {
   NewListMatch,
 } from '../IstoriesTypes'
 
-// TODO: needs Entity superclass
 class NewEntity extends IstoriesEntityBase<New> {
 
   constructor(client: IstoriesSDK, entopts: any) {

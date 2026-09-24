@@ -118,7 +118,6 @@ class IstoriesConfig
               'name' => 'list',
               'points' => [
                 [
-                  'args' => [],
                   'kind' => 'http',
                   'method' => 'GET',
                   'orig' => '/page-data/news/page-data.json',
@@ -133,17 +132,19 @@ class IstoriesConfig
                       'lit' => 'page-data.json',
                     ],
                   ],
-                  'select' => [
-                    '$action' => 'page_data',
-                  ],
-                  'transform' => [
-                    'req' => '`reqdata`',
-                    'res' => '`body`',
-                  ],
                   'parts' => [
                     'page-data',
                     'news',
                     'page-data.json',
+                  ],
+                  'rename' => [],
+                  'transform' => [
+                    'req' => '`reqdata`',
+                    'res' => '`body`',
+                  ],
+                  'args' => [],
+                  'select' => [
+                    '$action' => 'page_data',
                   ],
                 ],
               ],

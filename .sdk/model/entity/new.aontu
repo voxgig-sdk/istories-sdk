@@ -1,0 +1,48 @@
+# Entity: new
+
+main: kit: entity: new: {
+
+  alias: field: {}
+
+  name: "new"
+  op: {
+    list: {
+      name: "list"
+      points: [
+        {
+          co: {
+            id: "GET /page-data/news/page-data.json"
+            source: "openapi3"
+            version: 2
+          }
+          m: "GET"
+          o: "/page-data/news/page-data.json"
+          q: {
+            "$action": "page_data"
+          }
+          s: [
+            {
+              lit: "page-data"
+            }
+            {
+              lit: "news"
+            }
+            {
+              lit: "page-data.json"
+            }
+          ]
+          t: {
+            req: "`reqdata`"
+            res: "`body`"
+          }
+        }
+      ]
+    }
+  }
+
+  fields: {
+  }
+
+
+
+}

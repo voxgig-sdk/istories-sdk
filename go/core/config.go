@@ -96,7 +96,6 @@ func MakeConfig() map[string]any {
 						"name": "list",
 						"points": []any{
 							map[string]any{
-								"args": map[string]any{},
 								"kind": "http",
 								"method": "GET",
 								"orig": "/page-data/news/page-data.json",
@@ -111,17 +110,19 @@ func MakeConfig() map[string]any {
 										"lit": "page-data.json",
 									},
 								},
-								"select": map[string]any{
-									"$action": "page_data",
-								},
-								"transform": map[string]any{
-									"req": "`reqdata`",
-									"res": "`body`",
-								},
 								"parts": []any{
 									"page-data",
 									"news",
 									"page-data.json",
+								},
+								"rename": map[string]any{},
+								"transform": map[string]any{
+									"req": "`reqdata`",
+									"res": "`body`",
+								},
+								"args": map[string]any{},
+								"select": map[string]any{
+									"$action": "page_data",
 								},
 							},
 						},
