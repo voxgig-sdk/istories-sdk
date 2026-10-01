@@ -37,6 +37,8 @@ require_once __DIR__ . '/TransformResponse.php';
 
 IstoriesUtility::setRegistrar(function (IstoriesUtility $u): void {
     $u->clean = [IstoriesClean::class, 'call'];
+    $u->clean_add = [IstoriesClean::class, 'add'];
+    $u->clean_explain = [IstoriesDone::class, 'clean_explain'];
     $u->done = [IstoriesDone::class, 'call'];
     $u->make_error = [IstoriesMakeError::class, 'call'];
     $u->feature_add = [IstoriesFeatureAdd::class, 'call'];

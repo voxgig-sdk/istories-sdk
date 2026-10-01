@@ -1,7 +1,13 @@
 -- Istories SDK error
 
+local json = require("dkjson")
+
 local IstoriesError = {}
 IstoriesError.__index = IstoriesError
+
+-- Reachable for a debugger, absent from the table itself: the context holds
+-- the live spec and options, and an error is what gets dumped or encoded.
+local CONTEXT = setmetatable({}, { __mode = "k" })
 
 
 function IstoriesError.new(code, msg, ctx)
@@ -10,10 +16,15 @@ function IstoriesError.new(code, msg, ctx)
   self.sdk = "Istories"
   self.code = code or ""
   self.msg = msg or ""
-  self.ctx = ctx
   self.result = nil
   self.spec = nil
+  CONTEXT[self] = ctx
   return self
+end
+
+
+function IstoriesError:context()
+  return CONTEXT[self]
 end
 
 
@@ -22,8 +33,32 @@ function IstoriesError:error()
 end
 
 
+-- What make_error attached is already cleaned; the context is not part of
+-- the record.
+function IstoriesError:to_table()
+  return {
+    sdk = self.sdk,
+    code = self.code,
+    msg = self.msg,
+    status = self.status,
+    result = self.result,
+    spec = self.spec,
+  }
+end
+
+
+function IstoriesError:to_json()
+  return json.encode(self:to_table())
+end
+
+
 function IstoriesError:__tostring()
   return self.msg
+end
+
+
+function IstoriesError.__tojson(self)
+  return self:to_json()
 end
 
 

@@ -33,6 +33,8 @@ require_relative 'transform_response'
 
 IstoriesUtility.registrar = ->(u) {
   u.clean = IstoriesUtilities::Clean
+  u.clean_add = IstoriesUtilities::CleanAdd
+  u.clean_explain = IstoriesUtilities::CleanExplain
   u.done = IstoriesUtilities::Done
   u.make_error = IstoriesUtilities::MakeError
   u.feature_add = IstoriesUtilities::FeatureAdd
