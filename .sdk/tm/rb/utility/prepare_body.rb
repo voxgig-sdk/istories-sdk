@@ -1,6 +1,9 @@
 # Istories SDK utility: prepare_body
+require_relative 'media'
 module IstoriesUtilities
   PrepareBody = ->(ctx) {
-    ctx.op.input == "data" ? ctx.utility.transform_request.call(ctx) : nil
+    return nil unless ctx.op.input == "data"
+    return IstoriesUtilities.raw_body(ctx.reqdata) if IstoriesUtilities.raw_request?(ctx.point)
+    ctx.utility.transform_request.call(ctx)
   }
 end

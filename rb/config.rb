@@ -79,6 +79,7 @@ module IstoriesConfig
           },
           "optspec" => {
             "clearTimer" => "`$FUNCTION`",
+            "now" => "`$FUNCTION`",
             "setTimer" => "`$FUNCTION`",
           },
           "strict" => false,
@@ -131,6 +132,10 @@ module IstoriesConfig
                   "args" => {},
                   "select" => {
                     "$action" => "page_data",
+                  },
+                  "response" => {
+                    "kind" => "json",
+                    "media" => "application/json",
                   },
                 },
               ],

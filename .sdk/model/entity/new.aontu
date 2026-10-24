@@ -20,6 +20,10 @@ main: kit: entity: new: {
           q: {
             "$action": "page_data"
           }
+          rs: {
+            kind: "json"
+            media: "application/json"
+          }
           s: [
             {
               lit: "page-data"
